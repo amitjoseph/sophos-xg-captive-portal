@@ -112,6 +112,8 @@ def main():
      #logoff
      processRequest()
 
+if __name__== "__main__":
+  main()
 
 
 
