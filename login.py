@@ -57,8 +57,9 @@ def checkmsg(message):
     return a
 
 """
-login mode = 191
-logout mode = 193
+MODE SELECT
+login  = 191 (default)
+logout = 193
 
 """
 def processRequest(uid="",pas="",mode="191"):
@@ -106,10 +107,11 @@ def processRequest(uid="",pas="",mode="191"):
 
 
 def main():
-     #login
+     #login examples
      processRequest("username","password")
+     processRequest("username") #password will be same as username
 
-     #logoff
+     #logoff examples
      processRequest()
 
 if __name__== "__main__":
